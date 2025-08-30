@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 112, "column": 0}, "map": {"version":3,"sources":["file:///E:/GithubRepo/personal/streamforge/frontend/app/page.tsx"],"sourcesContent":["import axios from \"axios\";\n\nconst baseUrl = `${process.env.NEXT_PUBLIC_API_URL}`;\n\nexport default async function Home() {\n  const res = await axios.get(baseUrl);\n  const data = res.data\n  return (\n    <div className=\"min-h-screen font-[family-name:var(--font-geist-sans)]\">\n      <h1>{data}</h1>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;;AAEA,MAAM,UAAU,+DAAoC;AAErC,eAAe;IAC5B,MAAM,MAAM,MAAM,qIAAA,CAAA,UAAK,CAAC,GAAG,CAAC;IAC5B,MAAM,OAAO,IAAI,IAAI;IACrB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;sBAAI;;;;;;;;;;;AAGX","debugId":null}}]
+}
